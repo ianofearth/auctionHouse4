@@ -1,3 +1,6 @@
+<button class="btn btn-primary" {{action 'edit'}}>Edit this Auction's Information</button>
+<button class="btn btn-danger" {{action 'delete'}}>Delete this Auction</button>
+{{#link-to 'new-item' this.id class="btn btn-default"}}Add New Item to Auction{{/link-to}}
 <h1>{{title}}</h1>
 <h2>{{identifier}}</h2>
 <h4>Click image to view additional details</h4>
@@ -44,12 +47,9 @@
 
 
 
-<p>{{#link-to 'new-item' this.id class="btn btn-default"}}Add New Item to Auction{{/link-to}}</p>
 
 {{outlet}}
 
-<button class="btn btn-primary" {{action 'edit'}}>Edit this Auction's Information</button>
-<button class="btn btn-danger" {{action 'delete'}}>Delete this Auction</button>
 
 
 
